@@ -3,4 +3,9 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
+ <PropertyGroup Label="NuGet Audit">
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditLevel Condition="'$(NuGetAuditLevel)' == ''">high</NuGetAuditLevel>
+    <NuGetAuditMode>all</NuGetAuditMode>
+ </PropertyGroup>
 </Project>
